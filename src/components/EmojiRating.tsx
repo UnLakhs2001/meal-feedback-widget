@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { recordRating } from "@/lib/ratingStore";
 
 // Drop your custom images in src/assets/emojis/ and update filenames here
 const ratings = [
