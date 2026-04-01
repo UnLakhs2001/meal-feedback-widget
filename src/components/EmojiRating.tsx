@@ -1,14 +1,14 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
+// Drop your custom images in src/assets/emojis/ and update filenames here
 const ratings = [
-  { emoji: "😠", label: "ΠΟΛΥ ΚΑΚΟ" },
-  { emoji: "😕", label: "ΚΑΚΟ" },
-  { emoji: "😐", label: "ΜΕΤΡΙΟ" },
-  { emoji: "😊", label: "ΚΑΛΟ" },
-  { emoji: "🤩", label: "ΑΡΙΣΤΟ" },
+  { image: "/emojis/very-bad.png", label: "ΠΟΛΥ ΚΑΚΟ" },
+  { image: "/emojis/bad.png", label: "ΚΑΚΟ" },
+  { image: "/emojis/average.png", label: "ΜΕΤΡΙΟ" },
+  { image: "/emojis/good.png", label: "ΚΑΛΟ" },
+  { image: "/emojis/excellent.png", label: "ΑΡΙΣΤΟ" },
 ];
-
 const EmojiRating = () => {
   const [phase, setPhase] = useState<"question" | "success">("question");
   const [selected, setSelected] = useState<number | null>(null);
