@@ -16,6 +16,7 @@ const EmojiRating = () => {
 
   const handleSelect = (index: number) => {
     setSelected(index);
+    recordRating(index);
     setTimeout(() => {
       setPhase("success");
       setTimeout(() => {
