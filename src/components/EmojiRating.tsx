@@ -75,14 +75,14 @@ const EmojiRating = () => {
             <motion.span
               initial={{ rotate: -20 }}
               animate={{ rotate: 0 }}
-              className="text-6xl"
+              className="text-6xl md:text-8xl"
             >
               ✅
             </motion.span>
-            <p className="text-xl md:text-2xl font-bold text-foreground text-center">
+            <p className="text-xl md:text-3xl lg:text-4xl font-bold text-foreground text-center">
               Ευχαριστούμε!
             </p>
-            <p className="text-sm text-muted-foreground text-center">
+            <p className="text-sm md:text-lg text-muted-foreground text-center">
               Η απάντησή σας καταχωρήθηκε.
             </p>
           </motion.div>
